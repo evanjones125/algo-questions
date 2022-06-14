@@ -4,9 +4,7 @@
 
 function power(base, x){
     if (x === 0) return 1;
-    if (x === 1) return base;
-
     return base * power(base, x - 1);
 }
 
-console.log(power(5, 3));
+console.log(power(5, 1));
