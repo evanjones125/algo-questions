@@ -1,7 +1,6 @@
 // implement a function that accepts a variable number of arguments and checks
 // whether there are any duplicates among the arguments passed in
 const areThereDuplicates = (...args) => {
-    // add each arg to an object as a key with a value of its frequency
     const obj = {};
 
     for (let i of args) {
@@ -13,3 +12,6 @@ const areThereDuplicates = (...args) => {
 }
 
 console.log(areThereDuplicates('a', 'b', 'a'));
+// areThereDuplicates(1, 2, 3) -> false
+// areThereDuplicates(1, 2, 2) -> true
+// areThereDuplicates('a', 'b', 'c') -> true
