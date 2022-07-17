@@ -12,7 +12,8 @@ const minSubarrayLen = (arr, n) => {
     let right = arr.length - 1;
 
     for (let i = 0; i < arr.length; i++) {
-        if ()
+        const sum = 0;
+        if (arr[left]) {};
     }
 }
 
