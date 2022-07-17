@@ -16,7 +16,7 @@
 
 // sliding window approach
 const maxSubarraySum = (arr, n) => {
-    if (!arr[0]) return null;
+    if (arr.length === 0) return null;
     let maxSum = 0;
     let segment = 0;
 

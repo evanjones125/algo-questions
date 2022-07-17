@@ -12,13 +12,14 @@
 // }
 
 const sumZero = arr => {
-    let start = 0;
-    let end = arr.length - 1;
+    let left = 0;
+    let right = arr.length - 1;
 
-    while (start < end) {
-        let sum = arr[start] + arr[end];
-        if (sum === 0) return [arr[start], arr[end]];
-        sum > 0 ? end-- : start++;
+    while (right > left) {
+        let sum = arr[left] + arr[right];
+        if (sum === 0) return [arr[left], arr[right]];
+        if (sum > 0) right --;
+        if (sum < 0) left ++;
     }
 }
 

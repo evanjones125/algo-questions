@@ -1,10 +1,9 @@
 // given a sorted array and a value n, return the index where n is located
 // if value is not found, return -1
-const search = (arr, n) => {
-    for (let i in arr) {
-        if (arr[i] === n) return i;
-    }
 
+// solution without divide and conquer pattern
+const search = (arr, n) => {
+    for (let i in arr) if (arr[i] === n) return i;
     return -1;
 }
 
