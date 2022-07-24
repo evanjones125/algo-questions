@@ -1,24 +1,23 @@
 // given a string of characters, return the char that occurs the most often
 const maxChar = str => {
-    const arr = str.split('').sort();
     const store = {};
 
-    for (let i in arr) {
-        if (arr[i] !== ' ') store[arr[i]] ? store[arr[i]] ++ : store[arr[i]] = 1;
+    for (let i in str) {
+        if (str[i] !== ' ') store[str[i]] ? store[str[i]] ++ : store[str[i]] = 1;
     }
 
     let highest = 0;
-    let current;
+    let maxChar;
 
     for (let j in store) {
         if (store[j] > highest) {
             highest = store[j];
-            current = j;
+            maxChar = j;
         }
     }
 
-    return current;
+    return maxChar;
 }
 
-console.log(maxChar('ogres are like onions')); // o
+console.log(maxChar('ogres are like onions')); // e || o
 console.log(maxChar('hello world')); // l
